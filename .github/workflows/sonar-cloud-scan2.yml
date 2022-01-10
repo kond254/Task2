@@ -7,9 +7,6 @@ jobs:
     steps:
       - name: SonarCloud Scan
         uses: SonarSource/sonarcloud-github-action@v1.6
-      - uses: actions/checkout@v2
-        with:
-         fetch-depth: 0
       - name: Analyze with SonarCloud
         uses: sonarsource/sonarcloud-github-actions@v1.6
         env: 
