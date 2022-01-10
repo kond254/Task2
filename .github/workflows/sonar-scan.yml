@@ -4,7 +4,7 @@ on:
     branches: -"master"
               -"feature*"
 jobs:
-  sonarCloudTrigger
+  sonarCloudTrigger:
     name: SonarCloud Trigger
     runs-on: ubuntu-latest
     steps:
