@@ -1,5 +1,7 @@
 name: Super-Linter
+
 on: push
+
 jobs:
   super-lint:
     name: Lint code base
@@ -7,9 +9,9 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
-        
+
       - name: Run Super-Linter
-        uses: github/superlinter@v3
-        env: 
+        uses: github/super-linter@v3
+        env:
           DEFAULT_BRANCH: main
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
