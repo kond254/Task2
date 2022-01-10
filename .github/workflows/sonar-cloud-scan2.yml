@@ -1,8 +1,5 @@
 name: SonarCloud Scan
-on:
-  push:
-    branches: -"master"
-              -"feature*"
+on: [push]
 jobs:
   sonarCloudTrigger:
     name: SonarCloud Trigger
